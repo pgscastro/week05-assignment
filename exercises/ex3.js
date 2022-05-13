@@ -8,7 +8,11 @@ Create a function named numberOfVowels that will receive a string and return the
 */
 
 const numberOfVowels = function(data) {
-    // Put your solution here
+  let vowels = /[aeiou]/gi;
+  let volwelsString = data.match(vowels);
+  let count = volwelsString.length;
+
+  return count;
   };
   
   console.log(numberOfVowels("orange")); // 3
